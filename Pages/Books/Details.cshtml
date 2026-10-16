@@ -1,0 +1,28 @@
+﻿@page
+@model wt_lab5_5razor_strelchonok.Pages.Books.DetailsModel
+
+<div class="container py-4">
+    <h1 class="fw-bold mb-4">📖 Подробнее о книге</h1>
+    <div class="card shadow rounded-4">
+        <div class="card-body p-4">
+            <p><strong>ID:</strong> @Model.Book!.Id</p>
+            <p><strong>Название:</strong> @Model.Book.Title</p>
+            <p><strong>Автор:</strong> @Model.Book.Author</p>
+            <p><strong>Жанр:</strong> @Model.Book.Genre</p>
+            <p><strong>Год издания:</strong> @Model.Book.Year</p>
+            <p><strong>Количество страниц:</strong> @Model.Book.Pages</p>
+            <p>
+                <strong>Статус:</strong>
+                @if (Model.Book.IsAvailable)
+                {
+                    <span class="badge bg-success">В наличии</span>
+                }
+                else
+                {
+                    <span class="badge bg-danger">Нет в наличии</span>
+                }
+            </p>
+            <a asp-page="./Index" class="btn btn-outline-secondary">← Назад к списку</a>
+        </div>
+    </div>
+</div>

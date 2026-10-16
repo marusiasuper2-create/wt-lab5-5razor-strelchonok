@@ -1,0 +1,23 @@
+﻿# ===== Сборки .NET =====
+bin/
+obj/
+
+# ===== Visual Studio =====
+.vs/
+*.user
+*.suo
+
+# ===== Локальные настройки =====
+appsettings.Development.json
+appsettings.Local.json
+
+# ===== Пользовательские файлы =====
+*.log
+*.tmp
+
+# ===== Системные файлы =====
+.DS_Store
+Thumbs.db
+
+# ===== Пользовательские заметки =====
+*.md.user

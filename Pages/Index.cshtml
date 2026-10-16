@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="card shadow rounded-4">
+                <div class="card-body text-center p-5">
+                    <h1 class="fw-bold mb-3">📚 Библиотека</h1>
+                    <p class="text-muted mb-4">
+                        Веб-приложение для управления каталогом книг:
+                        просмотр, добавление, редактирование и удаление книг — всё в одном месте.
+                    </p>
+                    <a asp-page="/Books/Index" class="btn btn-primary btn-lg">
+                        Перейти к каталогу
+                    </a>
+                    <a asp-page="/Books/Create" class="btn btn-outline-secondary btn-lg ms-2">
+                        Добавить книгу
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
